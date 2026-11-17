@@ -1,0 +1,637 @@
+!　Creo自動最大化｜NO/yes
+open_window_maximized yes
+
+!　啟動Creo時,在browser顯示「3D模型空間」分頁｜YES/no
+enable_3dmodelspace_browser_tab no
+
+!　啟動Creo時,在browser顯示「PartCommunity」分頁｜YES/no
+enable_partcommunity_tab no
+
+!　啟動Creo時,在browser顯示「Creo｜PTC」分頁｜yes/no
+enable_resource_browser_tab no
+
+!　Creo瀏覽器首頁位置
+web_browser_homepage http:\\inip.local\
+
+!　自建材料存放目錄
+pro_material_dir D:\ptc\creo_stds\Material_lib
+
+!　自訂圖形存放目錄
+pro_palette_dir D:\ptc\creo_stds\SymPalettes
+
+!　指定Toolkit登錄檔路徑
+protkdat D:\ptc\DrwtoSIMP\protk.dat
+
+!　零件與組件範本起始目錄
+start_model_dir D:\ptc\creo_stds\template
+
+!　指定組件範本
+template_designasm D:\ptc\creo_stds\template\mmgs_asm_design.asm
+
+!　指定板金範本
+template_sheetmetalpart D:\ptc\creo_stds\template\mmgs_part_sheetmetal.prt
+
+!　指定零件範本
+template_solidpart D:\ptc\creo_stds\template\mmgs_part_solid.prt
+
+!　指定啟動Creo時要載入的模型樹組態
+mdl_tree_cfg_file D:\ptc\creo_stds\configs\tree.cfg
+
+!　open預設開啟的目錄｜default/ 桌面捷徑內容裡的開始位置 working_directory /in_session/pro_library/my_documents/desktop/workspace//
+file_open_default_folder working_directory
+
+!　新建零件時開啟選擇模板視窗｜NO/yes
+force_new_file_options_dialog yes
+
+!　物件預設長度單位｜UNIT_INCH/unit_foot/unit_mm/unit_cm/unit_m
+pro_unit_length unit_mm
+
+!　物件預設質量單位｜UNIT_POUND/unit_ounce/unit_ton/unit_gram/unit_kilogram/unti_tonne
+pro_unit_mass unit_gram
+
+!　設置相對精度
+accuracy_lower_bound 0.000001
+
+!　啟動絕對精度｜NO/yes
+enable_absolute_accuracy yes
+
+!　邊的顯示品質｜NORMAL/high/very high/low
+edge_display_quality normal
+
+!　預設顯示樣式｜著色 SHADE / 線框 wireframe / 隱藏線 hiddenvis / 僅可見線 hiddeninvis / 邊著色 shadewithedges / 反射著色 shadewithreflect
+display shadewithedges
+
+!　自動顯示零件干涉｜NO/yes
+show_interference_in_sections yes
+
+!　3D環境旋轉時隱藏線是否持續以隱藏線顯示｜NO/yes
+fasthlr yes
+
+!　在平移、縮放、旋轉中圓弧或曲線是否暫時以多邊形顯示｜NO/yes
+lods_enabled yes
+
+!　當lods_enabled為是時,顯示的百分比
+lods_value 10
+
+!　在3D中顯示註釋｜YES/no
+display_annotations no
+
+!　匯出stp時的格式｜AP203_IS/ap203_is_ext/ap202_is/ap209_dis/ap214_is/ap203_e2
+step_export_format ap203_is_ext
+
+!==========================↓drawing ↓==========================
+
+!　預設字型目錄
+pro_font_dir C:\Windows\Fonts
+
+!　指定圖框目錄
+pro_format_dir D:\ptc\creo_stds\format
+
+!　自訂剖面線的存放目錄
+pro_crosshatch_dir D:\ptc\creo_stds\XHatches
+
+!　工程圖設定檔存放目錄
+pro_dtl_setup_dir D:\ptc\creo_stds\drawing_setup
+
+!　自訂Notes存放目錄｜副檔名為txt
+pro_note_dir D:\ptc\creo_stds\Notes
+
+!　列印設定檔存放目錄
+pro_plot_config_dir D:\ptc\creo_stds\Plot_Configs
+
+!　自訂表格的存放目錄
+pro_table_dir D:\ptc\creo_stds\Tables
+
+!　線寬對應表
+pen_table_file D:\ptc\creo_stds\Plot_Configs\table.pnt
+
+!　指定工程圖設定檔
+!"drawing_setup_file D:\ptc\creo_stds\drawing_setup\metric.dtl"
+drawing_setup_file D:\ptc\work-creo\metric.dtl
+
+!　指定圖框設定檔
+!"format_setup_file D:\ptc\creo_stds\drawing_setup\metric.dtl"
+format_setup_file D:\ptc\work-creo\metric.dtl
+
+!　匯出文件設定檔目錄
+intf_profile_dir D:\ptc\creo_stds\Export_Profiles\
+
+!　DXF＆DWG 匯出設定檔 (顏色,層,線型,字體)
+intf2d_out_dxf_mapping_file D:\ptc\creo_stds\Export_Profiles\dxf_export.pro
+
+!　DXF檔匯出版本｜2013/12/13/14/2000/2004/2007/2010
+dxf_export_format 2004
+
+!　DWG檔匯出版本｜2013/14/2000/2004/2007/2010
+dwg_export_format 2004
+
+!　導出時,是否將點作為圖元保存｜NO/yes
+intf2d_out_pnt_ent yes
+
+!　是否將多行文字以多行文字輸出｜YES/no　設置為no時將以單行文字輸出
+intf2d_out_acad_mtext no
+
+!　輸出為pdf時使用線寬參數｜NO/yes
+pdf_use_pentable yes
+
+!　是否使用8種繪圖筆(Plotter_Pens-印表機)｜NO/yes 
+use_8_plotter_pens yes
+
+!　工程圖視圖預設比例
+default_draw_scale 1
+
+!　
+interface_quality 3
+
+!==========================↓myconfig↓==========================
+
+!  選單和對話方塊的文字大小｜small/medium/large
+fonts_size large
+
+!  對話框的內定字型｜大小,字型
+default_font 13 
+
+!  指令選單的內定字型｜大小,字型
+menu_font 13
+
+!  設置彈出式說明中的字形｜大小,字型
+popuphelp_font 13
+
+!　模型樹字型｜大小,字型
+model_tree_font 13
+
+!  設置系統坐標及基準面顯示的字體大小 數字愈小字體愈大｜10~100
+text_height_factor 40
+
+!  系統顏色模板
+!"system_colors_file D:\ptc\work-creo\syscol_inventor-test.scl"
+system_colors_file D:\ptc\work-creo\syscol_inventor.scl
+
+! symbol目錄
+pro_symbol_dir D:\hakuketsu\symbol\MNT_Symbol
+
+!  按鈕說明文字是否為英文
+button_name_in_help yes
+
+!  設置下拉功能表時為中英文雙語功能表
+menu_translation both
+
+! 基準點形狀｜CROSS/dot/circle/triangle/square
+datum_point_symbol CROSS
+
+!  顯示弱尺寸｜YES/no
+sketcher_disp_weak_dimensions no
+
+!  鎖定修改的尺寸｜NO/yes
+sketcher_lock_modified_dims yes
+
+!  鎖定使用者定義尺寸｜NO/yes
+sketcher_dimension_autolock yes
+
+!  非角度尺寸的尺寸小數位數
+default_dec_places 3
+
+!  角度尺寸小數位數
+! default_ang_dec_places 2
+
+!  圓弧精度｜LOW/medium/high
+edge_tess_quality high
+
+!  預設視角｜等角 isometric / 斜角 TRIMETRIC / 使用者自訂 user_default
+orientation isometric
+
+!  設置轉場動畫時間
+max_animation_time 0.0
+
+!  顯示草圖約束｜YES/no
+sketcher_disp_constraints no
+
+!　顯示旋轉中心符號｜YES/no
+spin_center_display no
+
+!　顯示基準軸｜YES/no
+display_axes no
+
+!  顯示基準軸名稱｜NO/yes
+display_axis_tags yes
+
+!　顯示座標系｜YES/no
+display_coord_sys no
+
+!  顯示座標系名稱｜YES/no
+display_coord_sys_tags no
+
+!　顯示基準平面｜YES/no
+display_planes no
+
+!  顯示基準平面名稱｜NO/yes
+display_plane_tags yes
+
+!　顯示基準點｜YES/no
+display_points no
+
+!  顯示基準點名稱｜NO/yes
+display_point_tags no
+
+!  是否允許將樹視窗與Creo視窗分離開來
+enable_tree_indep yes
+
+!　進入草圖時自動轉正檢視｜NO/yes
+sketcher_starts_in_2d yes
+
+!　開啟預選反白｜yes/no
+prehighlight no
+
+!　開啟樹中的預選反白｜NO/yes
+prehighlight_tree yes
+
+!  暫時降低圖形品質｜YES/no
+freestyle_drag_performance no
+
+!  顯示"顯示錯誤"選單｜NO/yes
+show_geom_checks_on_creation yes
+
+!  設定內建瀏覽器
+windows_browser_type chromium_browser
+
+!  自動儲存圖層顯示狀態｜YES/no
+save_hidden_items_w_status no
+
+!  儲存檔案的版序｜YES/no
+save_file_iterations no
+
+!  退出Creo時是否提示儲存檔案｜NO/yes
+!prompt_on_exit.yes
+
+!　顯示圓錐曲面＆N側曲面(Conic Surface and N-sided Patch)
+enable_obsoleted_features yes
+
+!　使用自訂圖形工具列設定檔
+!load_ui_customization_run_dir.yes
+
+!===========================↓mapkey↓===========================
+
+mapkey l @MAPKEY_NAME直線;@MAPKEY_LABELline;~ Command `ProCmdSketLine`  1;
+
+mapkey w1 @MAPKEY_NAME矩形;@MAPKEY_LABELrectangle;~ Command `ProCmdSketRectangle`  1;
+
+mapkey w2 @MAPKEY_NAME中心矩形;@MAPKEY_LABELcenter_rectangle;~ Command `ProCmdSketCenterRectangle`  1;
+
+mapkey a @MAPKEY_NAME中心點弧;@MAPKEY_LABELarc;~ Command `ProCmdSketCenterEnds`  1;
+
+mapkey cc @MAPKEY_NAME圓;@MAPKEY_LABELcircle;~ Command `ProCmdSketCenterPoint`  1;
+
+mapkey vv @MAPKEY_NAME可見性;@MAPKEY_LABELconsturction;~ Command `ProCmdEditGeomConstr`;
+
+mapkey x @MAPKEY_NAME修剪;@MAPKEY_LABELtrim;~ Command `ProCmdEditDelSeg`  1;
+
+mapkey o @MAPKEY_NAME偏移;@MAPKEY_LABELoffset;~ Command `ProCmdSketOffset`  1;
+
+mapkey ii @MAPKEY_NAME平行;@MAPKEY_LABELpalallel;~ Command `ProCmdSketParallelConstr`;
+
+mapkey i6 @MAPKEY_NAME互垂;@MAPKEY_LABELperpendicular;~ Command `ProCmdSketOrthogConstr`;
+
+mapkey i7 @MAPKEY_NAME水平;@MAPKEY_LABELhorizontal;~ Command `ProCmdSketHorizConstr`;
+
+mapkey i8 @MAPKEY_NAME垂直;@MAPKEY_LABELvertical;~ Command `ProCmdSketVerticalConstr`;
+
+mapkey t @MAPKEY_NAME相切;@MAPKEY_LABELtangent;~ Command `ProCmdSketTangentConstr`;
+
+mapkey q` @MAPKEY_NAME中心線;@MAPKEY_LABELcenterline;~ Command `ProCmdSketGeomCenterline`  1;
+
+mapkey qq @MAPKEY_NAME點;@MAPKEY_LABELpoint;~ Command `ProCmdSketGeomPoint`  1;
+
+mapkey q1 @MAPKEY_NAME重合;@MAPKEY_LABELcoincident;~ Command `ProCmdSketAlignConstr`;
+
+mapkey = @MAPKEY_NAME相等;@MAPKEY_LABELequal;~ Command `ProCmdSketEqualConstr`;
+
+mapkey nm @MAPKEY_NAME對稱;@MAPKEY_LABELsymmetric;~ Command `ProCmdSketSymmetryConstr`;
+
+!"mapkey d @MAPKEY_LABELdimension;~ Command `ProCmdSketDimension`  1;\"
+mapkey d @MAPKEY_NAME標註;@MAPKEY_LABELdimension;\
+mapkey(continued) ~ Command `ProCmdSketDimension`  1;\
+mapkey(continued) ~ Command `ProCmdDwgCrStdNewRefDim` ;
+
+!"mapkey bn @MAPKEY_NAME草圖鏡射;@MAPKEY_LABELsketch_mirror;~ Command `ProCmdEditMirror`  1;"
+!"mapkey nn @MAPKEY_NAME特徵鏡射;@MAPKEY_LABELmirror;~ Command `ProCmdFtMirror`;"
+mapkey nn @MAPKEY_NAME鏡射;@MAPKEY_LABELmirror;\
+mapkey(continued) ~ Command `ProCmdEditMirror`  1;\
+mapkey(continued) ~ Command `ProCmdFtMirror`;
+
+mapkey p0 @MAPKEY_NAME投影;@MAPKEY_LABELreferences;~ Command `ProCmdSketReferences`;
+
+mapkey p9 @MAPKEY_NAME投影草圖;@MAPKEY_LABELproject;~ Command `ProCmdSketProject`  1;
+
+mapkey pol @MAPKEY_NAME多邊形;@MAPKEY_LABELpolygon;~ Command `ProCmdSketPalette`;
+
+!"mapkey s @MAPKEY_NAME草圖;@MAPKEY_LABELsketch;~ Command `ProCmdDatumSketCurve`;"
+!"mapkey fs @MAPKEY_NAME完成草圖;@MAPKEY_LABELfinish_sketch;~ Command `ProCmdSketDone`;"
+mapkey s @MAPKEY_NAME草圖/完成草圖;@MAPKEY_LABELsketch/finish_sketch;\
+mapkey(continued) ~ Command `ProCmdDatumSketCurve`;\
+mapkey(continued) ~ Command `ProCmdSketDone`;
+
+mapkey e @MAPKEY_NAME擠出;@MAPKEY_LABELextrude;~ Command `ProCmdFtExtrude`;
+
+mapkey r @MAPKEY_NAME迴轉;@MAPKEY_LABELrevolve;~ Command `ProCmdFtRevolve`;
+
+mapkey kk @MAPKEY_NAME倒角;@MAPKEY_LABELchamfer;~ Command `ProCmdChamferEdge`;
+
+mapkey ff @MAPKEY_NAME圓角;@MAPKEY_LABELround;~ Command `ProCmdRound`;
+
+mapkey h @MAPKEY_NAME孔;@MAPKEY_LABELhole;~ Command `ProCmdHole`;
+
+mapkey m @MAPKEY_NAME測量;@MAPKEY_LABELmeasure;~ Command `ProCmdNmdTool`  1;
+
+mapkey $F6 @MAPKEY_NAME主視圖;@MAPKEY_LABELorientation;~ Command `ProCmdNamedViewsGalSelect`  `Standard Orientation`;
+
+!"mapkey $F3 @MAPKEY_LABELHide;~ Command `ProCmdHideFeat_PushBtn@PopupMenuTree`;"
+mapkey $F3 @MAPKEY_NAME隱藏;@MAPKEY_LABELHide;\
+mapkey(continued) ~ Command `ProCmdHideFeat_PushBtn@PopupMenuTree`;\
+mapkey(continued) ~ Command `ProCmdViewHide`;\
+mapkey(continued) ~ Command `ProCmdViewSaveLayStat`;
+
+!"mapkey $F5 @MAPKEY_LABELunhide;~ Command `ProCmdUnhideFeat_PushBtn@PopupMenuTree`;"
+mapkey $F5 @MAPKEY_NAME顯示;@MAPKEY_LABELunhide;\
+mapkey(continued) ~ Command `ProCmdUnhideFeat_PushBtn@PopupMenuTree`;\
+mapkey(continued) ~ Command `ProCmdViewShow`;\
+mapkey(continued) ~ Command `ProCmdViewSaveLayStat`;
+
+mapkey $F7 @MAPKEY_NAME線架構;@MAPKEY_LABELwireframe;~ Command `ProCmdEnvWireframe`  1;
+
+mapkey $F8 @MAPKEY_NAME描邊;@MAPKEY_LABELshading_with_edges;~ Command `ProCmdEnvShadedEdges`  1;
+
+mapkey $F9 @MAPKEY_NAME顯示/隱藏約束;@MAPKEY_LABELdisp_constraints;~ Command `ProCmdSketDispConstr`  1;
+
+mapkey `1w @MAPKEY_NAME關閉視窗;@MAPKEY_LABELclose;~ Command `ProCmdWinCloseGroup`;
+
+mapkey vi @MAPKEY_NAME投影試圖;@MAPKEY_LABELview;~ Command `ProCmdDwgViewProj@PopupMenuGraphicWinStack`;
+
+mapkey pp @MAPKEY_NAME屬性;@MAPKEY_LABELproperties;~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack`;
+
+mapkey clean @MAPKEY_NAME清除暫存;@MAPKEY_LABELclean;\
+mapkey(continued) ~ Command `ProCmdModelEraseNotDisp`;\
+mapkey(continued) ~ Activate `file_erase_nd` `ok_pb`;
+
+!"mapkey(continued) ~ Select `ribbon_options_dialog` `PageSwitcherPageList` 1 `colors_layouts`;\"
+!"mapkey(continued) ~ Activate `ribbon_options_dialog` `colors_layouts.system_colors_file_open`;\"
+!"mapkey(continued) ~ Trail `UI Desktop` `UI Desktop` `DLG_PREVIEW_POST` `file_open`;\"
+!"mapkey(continued) ~ Select `file_open` `Ph_list.Filelist` 1 `syscol_inventor-drw-cad.scl`;\"
+!"mapkey(continued) ~ Command `ProFileSelPushOpen_Standard@context_dlg_open_cmd` ;\"
+!"mapkey(continued) ~ Activate `ribbon_options_dialog` `OkPshBtn`;\"
+!"mapkey(continued) ~ FocusIn `UITools Msg Dialog Future` `no`;\"
+!"mapkey(continued) ~ Activate `UITools Msg Dialog Future` `no`;"
+mapkey ww @MAPKEY_NAME工程圖配色;@MAPKEY_LABELDrawing_color;~ Command `ProCmdRibbonOptionsDlg` ;\
+mapkey(continued) ~ Select `ribbon_options_dialog` `PageSwitcherPageList` 1 `colors_layouts`;\
+mapkey(continued) ~ Update `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt` \
+mapkey(continued) `D:\\ptc\\work-creo\\syscol_inventor-drw-cad.scl`;\
+mapkey(continued) ~ Activate `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt`;\           
+mapkey(continued) ~ FocusOut `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt`;\
+mapkey(continued) ~ Activate `ribbon_options_dialog` `OkPshBtn`;\
+mapkey(continued) ~ FocusIn `UITools Msg Dialog Future` `no`;\
+mapkey(continued) ~ Activate `UITools Msg Dialog Future` `no`;
+
+mapkey wq @MAPKEY_NAME零件配色;@MAPKEY_LABELPart_color;~ Command `ProCmdRibbonOptionsDlg` ;\
+mapkey(continued) ~ Select `ribbon_options_dialog` `PageSwitcherPageList` 1 `colors_layouts`;\
+mapkey(continued) ~ Update `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt` \
+mapkey(continued) `D:\\ptc\\work-creo\\syscol_inventor.scl`;\
+mapkey(continued) ~ Activate `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt`;\           
+mapkey(continued) ~ FocusOut `ribbon_options_dialog` `colors_layouts.system_colors_file_inpt`;\
+mapkey(continued) ~ Activate `ribbon_options_dialog` `OkPshBtn`;\
+mapkey(continued) ~ FocusIn `UITools Msg Dialog Future` `no`;\
+mapkey(continued) ~ Activate `UITools Msg Dialog Future` `no`;
+
+!=========================↓tolerance↓==========================
+
+mapkey .00 @MAPKEY_NAME0 +/- 0;@MAPKEY_LABEL0 +/- 0;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 1;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `0`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .01 @MAPKEY_NAME0 +/- 0.1;@MAPKEY_LABEL0 +/- 0.1;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `0`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .02 @MAPKEY_NAME0 +/- 0.01;@MAPKEY_LABEL0 +/- 0.01;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `0`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .03 @MAPKEY_NAME0 +/- 0.001;@MAPKEY_LABEL0 +/- 0.001;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `0`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .11 @MAPKEY_NAME0.1 +/- 0.1;@MAPKEY_LABEL0.1 +/- 0.1;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 1;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .12 @MAPKEY_NAME0.1 +/- 0.01;@MAPKEY_LABEL0.1 +/- 0.01;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .13 @MAPKEY_NAME0.1 +/- 0.001;@MAPKEY_LABEL0.1 +/- 0.001;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .21 @MAPKEY_NAME0.01 +/- 0.1;@MAPKEY_LABEL0.01 +/- 0.1;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .22 @MAPKEY_NAME0.01 +/- 0.01;@MAPKEY_LABEL0.01 +/- 0.01;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 1;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .23 @MAPKEY_NAME0.01 +/- 0.001;@MAPKEY_LABEL0.01 +/- 0.001;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .31 @MAPKEY_NAME0.001 +/- 0.1;@MAPKEY_LABEL0.001 +/- 0.1;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `1`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .32 @MAPKEY_NAME0.001 +/- 0.01;@MAPKEY_LABEL0.001 +/- 0.01;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 0;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_tol_num_dig` `2`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey .33 @MAPKEY_NAME0.001 +/- 0.001;@MAPKEY_LABEL0.001 +/- 0.001;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `chk_tol_default_dec_places` 1;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_num_dig` `3`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..90 @MAPKEY_NAME參考尺寸;@MAPKEY_LABELReference Dimension;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ FocusIn `mod_dim_new_asynch` `txt_dim_text`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `txt_dim_text` `(@D)`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..d @MAPKEY_NAME正常標註;@MAPKEY_LABELNormal Dimension;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ FocusIn `mod_dim_new_asynch` `txt_dim_text`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `txt_dim_text` `@D`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ... @MAPKEY_NAME無公差;@MAPKEY_LABELno tol;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Nominal`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..0005 @MAPKEY_NAME+/- 0.005;@MAPKEY_LABEL+/- 0.005;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.005`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..005 @MAPKEY_NAME+/- 0.05;@MAPKEY_LABEL+/- 0.05;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.05`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..008 @MAPKEY_NAME+/- 0.08;@MAPKEY_LABEL+/- 0.08;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.08`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..010 @MAPKEY_NAME+/- 0.10;@MAPKEY_LABEL+/- 0.1;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.1`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..015 @MAPKEY_NAME+/- 0.15;@MAPKEY_LABEL+/- 0.15;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.15`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..018 @MAPKEY_NAME+/- 0.18;@MAPKEY_LABEL+/- 0.18;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.18`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..020 @MAPKEY_NAME+/- 0.20;@MAPKEY_LABEL+/- 0.2;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.2`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..025 @MAPKEY_NAME+/- 0.25;@MAPKEY_LABEL+/- 0.25;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.25`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..030 @MAPKEY_NAME+/- 0.30;@MAPKEY_LABEL+/- 0.3;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.3`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..035 @MAPKEY_NAME+/- 0.35;@MAPKEY_LABEL+/- 0.35;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.35`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..040 @MAPKEY_NAME+/- 0.40;@MAPKEY_LABEL+/- 0.4;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.4`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..045 @MAPKEY_NAME+/- 0.45;@MAPKEY_LABEL+/- 0.45;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.45`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..050 @MAPKEY_NAME+/- 0.50;@MAPKEY_LABEL+/- 0.5;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `0.5`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+mapkey ..100 @MAPKEY_NAME+/- 0.10;@MAPKEY_LABEL+/- 1.0;\
+mapkey(continued) ~ Command `ProCmdEditProperties@PopupMenuGraphicWinStack` ;\
+mapkey(continued) ~ Open `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Close `mod_dim_new_asynch` `opt_tol_mode`;\
+mapkey(continued) ~ Select `mod_dim_new_asynch` `opt_tol_mode` 1 `Symmetric`;\
+mapkey(continued) ~ Update `mod_dim_new_asynch` `inp_ansi_pm_tol_value` `1`;\
+mapkey(continued) ~ FocusOut `mod_dim_new_asynch` `inp_ansi_pm_tol_value`;\
+mapkey(continued) ~ Activate `mod_dim_new_asynch` `psh_ok`;
+
+!==========================↑myconfig↑==========================
